@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>925移动开发实验室</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    header li {
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        display: block;
+    }
+
+    /* ----------- 上导航 ---------------- */
+    header {
+        background-image: url("img/school2.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 370px;
+    }
+
+    header div {
+        display: inline-block;
+    }
+
+    #headphoto {
+        float: left;
+        height: 50px;
+        padding: 0 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #login {
+        float: right;
+        height: 30px;
+        width: 60px;
+        padding: 0px;
+        text-align: center;
+        font-size: medium;
+        margin: 12px 30px;
+        background: none;
+    }
+
+    .headnav {
+        float: right;
+        display: flex;
+        align-items: center;
+    }
+
+    nav a {
+        color: white;
+        display: block;
+        padding: 15px 15px;
+        width: 100px;
+    }
+
+    nav a:hover {
+        background-color: #006030;
+        transform: scale(1.1);
+    }
+
+    .headerHide {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .headerHide ul {
+        display: none;
+        width: 64px;
+    }
+
+    .headerHide:hover ul { /*点击显示下拉*/
+        display: block;
+        padding: 5px;
+        width: 110px;
+        position: absolute;
+        background-color: #24998d;
+    }
+
+    nav > ul > ul {
+        padding: 10px 20px;
+        width: 160px;
+    }
+
+    nav > ul > ul li {
+        vertical-align: middle;
+    }
+    /*-------------------第二部分-------------------*/
+    .secondphoto {
+        background-image: url("img/test4.JPG");
+        height: 780px;
+        width: 100%;
+        background-size: 100% 100%;
+        padding: 20px;
+        background-repeat: no-repeat;
+        /*filter: blur(5px);*/
+    }
+
+    .second3 {
+        margin: 0 100px;
+        background-size: 100%;
+        padding: 10px 90px;
+        height: 100%;
+    }
+    .tit1 {
+        height: 45px;
+        line-height: 43px;
+    }
+
+    .tit1 h2 {
+        font-size: 24px;
+        font-weight: 700;
+        float: left;
+        padding-right: 15px;
+        text-align: center;
+    }
+
+    .tit1 h2 span {
+        font-size: 12px;
+    }
+    /*-----------------------图片部分----------------*/
+    .shiyanshi{
+        padding: 10px;
+        display: inline-block;
+        height: 200px;
+        width: 100%;
+    }
+    .shiyanshi1{
+        background-size: 100% 100%;
+        height: 200px;
+        float: left;
+        margin-right: 30px;
+        width: 30%;
+    }
+    /*-------------联系方式----------*/
+    .lianxi{
+        font-size: 10px;
+        color: blue;
+    }
+</style>
+<body>
+<header>
+    <nav>
+        <ul>
+            <img id="headphoto"
+                 src="img/logo.gif"
+                 alt="软件工程logo"/>
+            <input id="login" type="button" value="登录" onclick="location.href='admin.html'">
+            <div class="headnav">
+                <div class="headerHide">
+                    <li><a href="main.">主页</a></li>
+                </div>
+                <div class="headerHide">
+                    <li><a href="zhuanyejieshao.html">专业介绍</a></li>
+                    <ul>
+                        <li><a href="zhuanyejianjie.html">专业简介</a></li>
+                        <li><a href="fangxiangjianjie.html">方向简介</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="shiyanshi.html">实验室</a></li>
+                    <ul style="width: 175px;">
+                        <li ><a style="width: 175px" href="shiyanshi1.html">923创新实验室</a></li>
+                        <li><a style="width: 175px" href="shiyanshi2.html">925移动开发实验室</a></li>
+                        <li><a style="width: 175px" href="shiyanshi3.html">927实验室</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="jiaoshiduiwu.html">教师队伍</a></li>
+                    <ul>
+                        <li><a href="jiaoshou.html">教授</a></li>
+                        <li><a href="fujiaoshou.html">副教授</a></li>
+                        <li><a href="jiangshi.html">讲师</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="jiuyezhinan.html">就业指南</a></li>
+                    <ul>
+                        <li><a href="jiuyeqianjing.html">就业前景</a></li>
+                        <li><a href="qianjingfenxi.html">前景分析</a></li>
+                    </ul>
+                </div>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+
+<div class=secondphoto>  <!--最底层-->
+    <div class=second3> <!--白色底层-->
+        <div class="tit1"><!--标题-->
+            <h2>925移动开发实验室</h2>
+        </div>
+        <br>
+        <div>
+            <div style="text-indent: 2em;font-size: 16px;">
+                <pr>
+                    东北林业大学信息学院十分重视微格教学，在硬件方面购置了所需数码设备，目前拥有价值20万元的仪器设备，能拍出高清视频，此外还组织科研队伍，开发了可定格在某种教学技能的《微格教学评价系统》以及可定格在课堂元素的《微格课堂》模拟系统。《微格教学评价系统》可训练以下11种基本技能：语言技能、演示技能、板书技能、变化技能、导入技能、讲解技能、提问技能、强化技能、练习指导技能、结束技能、课堂组织技能。
+                </pr>
+            </div>
+            <br>
+            <div style="text-indent: 2em;font-size: 16px;">
+                <pr>
+                    《微格课堂》则以动画的形式对课堂元素进行模拟，这些软件对师范生教学技能的提高起到很大作用，在国内处于领先水平。此外，本实验室还在全国率先把班主任工作、师德陶冶纳入微格教学范畴，办出了特色。 除了对微格教学的研究，本实验室也大力开发教育应用软件，主要有无纸化考试系统、教育实习网和教学资源库等，为学校的教育信息化工作作出了贡献。
+                </pr>
+            </div>
+            <br>
+            <div style="text-indent: 2em;font-size: 16px;">
+                <pr>
+                    微格教学（Microteaching）又称微型教学，它是以现代教育理论为基础，利用先进的媒体信息技术，依据反馈原理和教学评价理论，分阶段系统培训师范生教学技能的活动。本实验室面向计算机学院师范类本科生，为《信息技术教学法》、《计算机辅助教学》、《教育实习》这3门课提供了教学技能训练的实验环境。
+                </pr>
+            </div>
+
+            <br><br><br>
+            <div class="shiyanshi">
+                <div class="shiyanshi1" style="background-image: url('img/shiyanshi3.jpg');">
+                </div>
+                <div class="shiyanshi1" style="background-image: url('img/shiyanshi5.jpg');">
+                </div>
+                <div class="shiyanshi1" style="background-image: url('img/shiyanshi1.jpg');">
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="lianxi">
+                有意者联系 王老师<br>
+                联系方式：13030075792<br>
+                邮箱：820040980@qq.com<br>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="footer" style="background-color:beige;clear:both;text-align:center;">
+    版权 © yang
+</div>
+</body>
+</html>

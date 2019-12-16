@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>就业指南</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    header li {
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        display: block;
+    }
+
+    /* ----------- 上导航 ---------------- */
+    header {
+        background-image: url("img/school2.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 370px;
+    }
+
+    header div {
+        display: inline-block;
+    }
+
+    #headphoto {
+        float: left;
+        height: 50px;
+        padding: 0 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #login {
+        float: right;
+        height: 30px;
+        width: 60px;
+        padding: 0px;
+        text-align: center;
+        font-size: medium;
+        margin: 12px 30px;
+        background: none;
+    }
+
+    .headnav {
+        float: right;
+        display: flex;
+        align-items: center;
+    }
+
+    nav a {
+        color: white;
+        display: block;
+        padding: 15px 15px;
+        width: 100px;
+    }
+
+    nav a:hover {
+        background-color: #006030;
+        transform: scale(1.1);
+    }
+
+    .headerHide {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .headerHide ul {
+        display: none;
+        width: 64px;
+    }
+
+    .headerHide:hover ul { /*点击显示下拉*/
+        display: block;
+        padding: 5px;
+        width: 110px;
+        position: absolute;
+        background-color: #24998d;
+    }
+
+    nav > ul > ul {
+        padding: 10px 20px;
+        width: 160px;
+    }
+
+    nav > ul > ul li {
+        vertical-align: middle;
+    }
+    /*-------------------第二部分-------------------*/
+    .secondphoto {
+        background-image: url("img/test4.JPG");
+        height: 980px;
+        width: 100%;
+        background-size: 100% 100%;
+        padding: 20px;
+        background-repeat: no-repeat;
+        /*filter: blur(5px);*/
+    }
+
+    .second3 {
+        background-color: rgba(255, 255, 255, 0.85);
+        margin: 0 140px;
+        background-size: 100%;
+        padding: 10px 93px;
+        height: 100%;
+    }
+    .tit1 {
+        height: 45px;
+        line-height: 43px;
+    }
+
+    .tit1 h2 {
+        font-size: 24px;
+        font-weight: 700;
+        float: left;
+        padding-right: 15px;
+        text-align: center;
+    }
+
+    .tit1 h2 span {
+        font-size: 12px;
+    }
+
+
+    .lianjiekuai {
+        width: 176px;
+        display: inline-block;
+        float: left;
+        position: relative;
+        height: 170px;
+        margin: 12px 40px 20px 0;
+        background-size: 100%;
+    }
+
+    .lianjietu {
+        width: 0;
+        height: 100%;
+        background-color: rgba(255,251,240, 0.7);
+        text-align: center;
+        font-size: 26px;
+        /*以下是滑动效果*/
+        transition: width 0.4s ease-out, opacity 0.2s ease-in, visibility 0.2s ease-in;
+        width: 0;
+        opacity: 0;
+        /*line-height: 160px;*/
+        font-weight:600;
+        display: inline-block; /*一定要将div设置为inline-block*/
+        vertical-align: middle;/*设置该元素在父元素中的位置*/
+    }
+
+    .lianjiekuai:hover .lianjietu {
+        opacity: 1;
+        width: 100%;}
+    /*-----------------------图片部分----------------*/
+    .shiyanshi{
+        padding: 10px;
+        display: inline-block;
+        height: 200px;
+        width: 100%;
+    }
+    .shiyanshi1{
+        background-size: 100% 100%;
+        height: 200px;
+        float: left;
+        margin-right: 30px;
+        width: 30%;
+    }
+
+</style>
+<body>
+<header>
+    <nav>
+        <ul>
+            <img id="headphoto"
+                 src="img/logo.gif"
+                 alt="软件工程logo"/>
+            <input id="login" type="button" value="登录" onclick="location.href='admin.html'">
+            <div class="headnav">
+                <div class="headerHide">
+                    <li><a href="main">主页</a></li>
+                </div>
+                <div class="headerHide">
+                    <li><a href="zhuanyejieshao.html">专业介绍</a></li>
+                    <ul>
+                        <li><a href="zhuanyejianjie.html">专业简介</a></li>
+                        <li><a href="fangxiangjianjie.html">方向简介</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="shiyanshi.html">实验室</a></li>
+                    <ul style="width: 175px;">
+                        <li ><a style="width: 175px" href="shiyanshi1.html">923创新实验室</a></li>
+                        <li><a style="width: 175px" href="shiyanshi2.html">925移动开发实验室</a></li>
+                        <li><a style="width: 175px" href="shiyanshi3.html">927实验室</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="jiaoshiduiwu.html">教师队伍</a></li>
+                    <ul>
+                        <li><a href="jiaoshou.html">教授</a></li>
+                        <li><a href="fujiaoshou.html">副教授</a></li>
+                        <li><a href="jiangshi.html">讲师</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="jiuyezhinan.html">就业指南</a></li>
+                    <ul>
+                        <li><a href="jiuyeqianjing.html">就业前景</a></li>
+                        <li><a href="qianjingfenxi.html">前景分析</a></li>
+                    </ul>
+                </div>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+
+<div class=secondphoto>  <!--最底层-->
+    <div class=second3> <!--白色底层-->
+        <div class="tit1"><!--标题-->
+            <h2>就业指南</h2>
+        </div>
+        <br>
+        <div>
+            <div style="text-indent: 2em;font-size: 16px;">
+                <pr>
+                    软件工程是研究大规模软件开发方法、工具和管理的一门工程科学，其特点是按工程化的原则和方法来组织和规范软件开发过程，软件工程技术则主要研究与软件开发各个工作流程相关的、先进实用的软件开发方法、技术和工具；软件工程技术专业面向国民经济电子信息化建设和发展的需要，培养具有扎实的软件理论和知识基础，对整个软件过程有整体了解、掌握软件工程领域的前沿技术，具有国际竞争能力，能从事大型软件项目系统分析、设计、编程、测试和软件项目管理等工作的复合型、实用型的高层次软件工程技术人才；主要涵盖软件工程学科和计算机学科的基本理论、基础知识、基本技能的研究，软件的分析与开发，计算机应用系统、计算机网络系统的设计与开发等专业内容。
+                </pr>
+            </div>
+            <br>
+            <div style="text-indent: 2em;font-size: 16px;">
+                <pr>
+                    中国的软件行业规模不是很大，有些软件企业在软件制作上，也只是采用了一些软件工程的思想，距离大规模的工业化大生产比较还是有一定的差距；原因有管理体制的问题，市场问题，政策问题，也有软件工程理论不全面和不完善的问题。
+                </pr>
+            </div>
+            <br>
+            <div style="text-indent: 2em;font-size: 16px;">
+                <pr>
+                    所以软件工程的研究和应用，以及中国软件行业的进一步发展，都需要一定的既有软件工程的理论基础和研究能力，又有一定的实践经验的软件工程科学技术人员来推动。软件工程的前途是光明的。
+                </pr>
+            </div>
+            <br>
+            <div style="text-indent: 2em;font-size: 16px;">
+                <pr>
+                    软件服务外包属于智力人才密集型现代服务业。大量著名外包企业落户宁波。主要就业去向包括软件外包与服务企业、信息产品与服务企业，担任程序员、软件测试员、项目经理等工作岗位。
+                </pr>
+            </div>
+            <br>
+            <div class="shiyanshi">
+                <div class="shiyanshi1" style="background-image: url('img/snow9.JPG');">
+                </div>
+                <div class="shiyanshi1" style="background-image: url('img/snow8.JPG');">
+                </div>
+                <div class="shiyanshi1" style="background-image: url('img/snow7.JPG');">
+                </div>
+            </div>
+            <br>   <br><br>
+            <HR  width="100%" color=#987cb9 SIZE=3>    <!--分割线-->
+            <br><br>
+        </div>
+        <div class="lianjiekuai" style="background-image: url('img/snow3.JPG')">
+            <div class="lianjietu">
+                <br>  <a href="jiuyeqianjing.html" style="color: midnightblue">就业<br>前景</a>
+            </div>
+        </div>
+        <div class="lianjiekuai" style="background-image: url('img/snow7.JPG')">
+            <div class="lianjietu">
+                <br><a href="qianjingfenxi.html" style="color: midnightblue">前景<br>分析</a>
+            </div>
+        </div>
+
+        <div class="lianjiekuai"style="background-image: url('img/链接1.JPG')">
+            <div class="lianjietu">
+                <br>  <a href="main.jsp" style="color: midnightblue">回到<br>首页</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="footer" style="background-color:beige;clear:both;text-align:center;">
+    版权 © yang
+</div>
+</body>
+</html>

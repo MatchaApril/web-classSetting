@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>方向简介</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    header li {
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        display: block;
+    }
+
+    /* ----------- 上导航 ---------------- */
+    header {
+        background-image: url("img/school2.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 370px;
+    }
+
+    header div {
+        display: inline-block;
+    }
+
+    #headphoto {
+        float: left;
+        height: 50px;
+        padding: 0 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #login {
+        float: right;
+        height: 30px;
+        width: 60px;
+        padding: 0px;
+        text-align: center;
+        font-size: medium;
+        margin: 12px 30px;
+        background: none;
+    }
+
+    .headnav {
+        float: right;
+        display: flex;
+        align-items: center;
+    }
+
+    nav a {
+        color: white;
+        display: block;
+        padding: 15px 15px;
+        width: 100px;
+    }
+
+    nav a:hover {
+        background-color: #006030;
+        transform: scale(1.1);
+    }
+
+    .headerHide {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .headerHide ul {
+        display: none;
+        width: 64px;
+    }
+
+    .headerHide:hover ul { /*点击显示下拉*/
+        display: block;
+        padding: 5px;
+        width: 110px;
+        position: absolute;
+        background-color: #24998d;
+    }
+
+    nav > ul > ul {
+        padding: 10px 20px;
+        width: 160px;
+    }
+
+    nav > ul > ul li {
+        vertical-align: middle;
+    }
+    /*-------------------第二部分-------------------*/
+    .zhaunyesec {
+        background-image: url("img/test5.jpg");
+        height: 1400px;
+        width: 100%;
+        background-size: 100% 100%;
+        padding: 20px;
+        background-repeat: no-repeat;
+        /*filter: blur(5px);*/
+    }
+</style>
+<body>
+<header>
+    <nav>
+        <ul>
+            <img id="headphoto"
+                 src="img/logo.gif"
+                 alt="软件工程logo"/>
+            <input id="login" type="button" value="登录" onclick="location.href='admin.html'">
+            <div class="headnav">
+                <div class="headerHide">
+                    <li><a href="main">主页</a></li>
+                </div>
+                <div class="headerHide">
+                    <li><a href="zhuanyejieshao.html">专业介绍</a></li>
+                    <ul>
+                        <li><a href="zhuanyejianjie.html">专业简介</a></li>
+                        <li><a href="fangxiangjianjie.html">方向简介</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="shiyanshi.html">实验室</a></li>
+                    <ul style="width: 175px;">
+                        <li ><a style="width: 175px" href="shiyanshi1.html">923创新实验室</a></li>
+                        <li><a style="width: 175px" href="shiyanshi2.html">925移动开发实验室</a></li>
+                        <li><a style="width: 175px" href="shiyanshi3.html">923实验室</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="jiaoshiduiwu.html">教师队伍</a></li>
+                    <ul>
+                        <li><a href="jiaoshou.html">教授</a></li>
+                        <li><a href="fujiaoshou.html">副教授</a></li>
+                        <li><a href="jiangshi.html">讲师</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="jiuyezhinan.html">就业指南</a></li>
+                    <ul>
+                        <li><a href="jiuyeqianjing.html">就业前景</a></li>
+                        <li><a href="qianjingfenxi.html">前景分析</a></li>
+                    </ul>
+                </div>
+            </div>
+        </ul>
+    </nav>
+</header>
+<div class="zhaunyesec">
+    <h2 style="margin: 30px 200px 0 200px">方向简介</h2>
+    <div style="margin: 17px 200px 20px 200px;text-indent: 2em;font-size: 16px;">
+        <pr>
+            本专业下设6个专业方向（专业方向将根据市场需求和社会发展需要进行适当的动态调整），各个方向统一基础，相互交融，除了培养计划规定的课程外，学生课外可免费利用学院现有的实验室、实训基地、公共服务平台的所有资源，交叉学习相关的其它方向课程，实现宽口径培养、宽口径就业。各个专业方向简介如下：
+        </pr>
+    </div>
+    <h4 style="margin: 30px 200px 0 200px">软件开发与测试方向：</h4>
+    <div style="margin: 20px 200px;text-indent: 2em;font-size: 16px;">
+        <pr>
+            侧重培养掌握计算机学科和软件工程专业的基础理论和技能，受到软件工程的系统训练，能够从事软件开发、软件测试（包括移动互联网软件开发与测试）、软件工程管理等工作的高素质软件专门人才。本方向设服务外包(ITO)人才培养试点班。特色课程包括：软件构造、人机交互的软件工程方法、软件需求工程、软件设计与体系结构、软件测试工具与实践、Oracle数据库、Linux程序设计、算法分析与设计、基于移动互联网的软件开发等及上述课程相应的实践课程和实训。本方向毕业生主要在软件企业、科研部门从事软件开发、软件测试及软件工程管理等工作，也可在教育单位、事业单位、技术和行政管理部门等单位从事软件相关工作。
+        </pr>
+    </div>
+    <h4 style="margin: 30px 200px 0 200px">电子商务与现代物流软件开发与应用方向：</h4>
+    <div style="margin: 20px 200px;text-indent: 2em;font-size: 16px;">
+        <pr>
+            侧重培养掌握电子商务与现代物流领域的基础理论和软件工程的基础知识，受到软件工程的基本训练，能够从事电子商务与现代物流软件开发、运营管理、维护等工作的复合型应用软件人才。特色课程包括：电子商务与物流管理导论、管理学、微观经济学、会计学原理、网络营销、网上支付与结算、运筹学、储仓管理、电子商务与现代物流系统规划与设计、基于移动互联网的软件开发等及上述课程相应的实践课程和实训。本方向毕业生主要在电子商务网站、工商企业、生产企业、金融机构、物流公司、配送中心、商业连锁企业、科研部门从事电子商务平台系统（ B2B、B2C、C2C、O2O等）和物流管理信息系统的分析、设计、开发、实施、评价、运营管理、维护等工作，也可在教育单位、事业单位、技术和行政管理部门等单位从事电子商务与物流管理相关工作。
+        </pr>
+    </div>
+    <h4 style="margin: 30px 200px 0 200px">企业信息化软件开发与应用方向：</h4>
+    <div style="margin: 20px 200px;text-indent: 2em;font-size: 16px;">
+        <pr>
+            侧重培养掌握信息化领域的基础理论和软件工程的基础知识，受到软件工程的基本训练，能够从事企业、政府、事业单位等信息化软件的开发、实施、应用、维护等工作的复合型应用软件人才。特色课程包括：信息化导论、管理学、微观经济学、会计学原理、企业资源计划(ERP)导论、ERP-财务管理、ERP-生产与运营管理、电子商务与现代物流概论、管理信息系统规划与设计、大型数据库管理、基于移动互联网的软件开发等及上述课程相应的实践课程和实训。本方向毕业生主要在各类企事业单位、政府部门、科研单位等从事信息化软件的分析、设计、开发、实施、评价、应用、维护或BPO服务外包等工作，也可在教育单位、技术和行政管理部门等单位从事信息化相关工作。
+        </pr>
+    </div>
+    <h4 style="margin: 30px 200px 0 200px">移动互联网软件开发与应用方向：</h4>
+    <div style="margin: 20px 200px;text-indent: 2em;font-size: 16px;">
+        <pr>
+            侧重培养掌握移动互联网领域的基础理论和软件工程的基础知识，受到软件工程的基本训练，能够从事移动设备应用软件开发、移动终端游戏开发、网站设计与开发，以及互联网+所涉及的软件设计、开发和应用服务等工作的复合型应用软件人才。特色课程包括：移动互联网导论、移动设备软件开发基础、C++程序设计、嵌入式C语言开发技术、ARM体系结构、嵌入式操作系统等及上述课程相应的实践课程和实训。本方向毕业生可在移动运营商、手机应用开发商、手机终端制造商、手机平台开发商等移动互联网行业，从事移动设备应用软件开发、移动终端游戏开发、网站设计与开发、以及互联网+有关的软件设计、开发和应用服务等工作。
+        </pr>
+    </div>
+    <h4 style="margin: 30px 200px 0 200px">云计算与大数据分析方向：</h4>
+    <div style="margin: 20px 200px;text-indent: 2em;font-size: 16px;">
+        <pr>
+            侧重培养掌握云计算与大数据应用领域的基础理论和软件工程的基础知识，受到软件工程的基本训练，能够从事数据库、数据中心设计、规划、建设、管理与运维、数据挖掘，数据报表可视化服务、数据分析等工作的复合型应用软件人才。特色课程包括：云计算与大数据导论、多元统计分析与R语言建模、数据仓库与数据挖掘、数据可视化技术、分布式系统、云计算虚拟化技术及应用、大数据应用技术及上述课程相应的实践课程和实训。本方向毕业生可在政府、各行各业的IDC，信息中心，大数据服务企业等从事数据库、数据中心设计、规划、建设、管理与运维、数据挖掘，数据报表可视化服务、数据分析等工作。
+        </pr>
+    </div>
+    <h4 style="margin: 30px 200px 0 200px">智慧城市建设应用软件开发与测试方向：</h4>
+    <div style="margin: 20px 200px;text-indent: 2em;font-size: 16px;">
+        <pr>
+            侧重培养掌握智慧医疗、智慧教育、智慧城管、智慧政务等领域的基础理论和软件工程的基础知识，受到软件工程的基本训练，能够从事上述领域智慧城市管理、建设、运维和个性化服务软件的开发、实施、应用、维护等工作的复合型应用软件人才。特色课程包括：智慧城市导论、云计算基础、大数据基础、移动互联网、物联网基础、Android开发、IOS开发等及上述课程相应的实践课程和实训。本方向毕业生主要在各类智慧城市建设的企事业单位、政府部门、科研单位等各行各业的智慧行业建设中从事智慧城市建设相关的应用层软件的分析、设计、开发、实施、评价、应用、维护等工作。
+        </pr>
+    </div>
+
+</div>
+
+<div id="footer" style="background-color:beige;clear:both;text-align:center;">
+    版权 © yang
+</div>
+</body>
+</html>

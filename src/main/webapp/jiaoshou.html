@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>教授</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    header li {
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        display: block;
+    }
+
+    /* ----------- 上导航 ---------------- */
+    header {
+        background-image: url("img/school2.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 370px;
+    }
+
+    header div {
+        display: inline-block;
+    }
+
+    #headphoto {
+        float: left;
+        height: 50px;
+        padding: 0 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #login {
+        float: right;
+        height: 30px;
+        width: 60px;
+        padding: 0px;
+        text-align: center;
+        font-size: medium;
+        margin: 12px 30px;
+        background: none;
+    }
+
+    .headnav {
+        float: right;
+        display: flex;
+        align-items: center;
+    }
+
+    nav a {
+        color: white;
+        display: block;
+        padding: 15px 15px;
+        width: 100px;
+    }
+
+    nav a:hover {
+        background-color: #006030;
+        transform: scale(1.1);
+    }
+
+    .headerHide {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .headerHide ul {
+        display: none;
+        width: 64px;
+    }
+
+    .headerHide:hover ul { /*点击显示下拉*/
+        display: block;
+        padding: 5px;
+        width: 110px;
+        position: absolute;
+        background-color: #24998d;
+    }
+
+    nav > ul > ul {
+        padding: 10px 20px;
+        width: 160px;
+    }
+
+    nav > ul > ul li {
+        vertical-align: middle;
+    }
+
+    /*-------------------第二部分-------------------*/
+    .secondphoto {
+        background-image: url("img/test4.JPG");
+        height: 600px;
+        width: 100%;
+        background-size: 100% 100%;
+        padding: 20px;
+        background-repeat: no-repeat;
+        /*filter: blur(5px);*/
+    }
+
+    .second3 {
+        margin: 0 140px;
+        background-size: 100%;
+        padding: 10px 93px;
+        height: 100%;
+    }
+
+    .tit1 {
+        height: 45px;
+        line-height: 43px;
+    }
+
+    .tit1 h2 {
+        font-size: 24px;
+        font-weight: 700;
+        float: left;
+        padding-right: 15px;
+        text-align: center;
+    }
+
+    .tit1 h2 span {
+        font-size: 12px;
+    }
+
+    /*-----------------------图片部分----------------*/
+    .teacher {
+        padding: 10px;
+        height: 200px;
+        width: 100%;
+
+    }
+
+    .teacher1 {
+        background-size: 100% 100%;
+        height: 140px;
+        float: left;
+        margin: 0 40px 0 50px;
+        width: 13%;
+    }
+
+    .teacher2 {
+        background-size: 100% 100%;
+        height: 140px;
+        float: left;
+        margin: 0 40px;
+        width: 13%;
+    }
+
+    .teacher3 {
+        background-size: 100% 100%;
+        height: 140px;
+        float: left;
+        margin: 0 50px 0 40px;
+        width: 13%;
+    }
+    .tname1{
+        height: 140px;
+        float: left;
+        margin: 10px 40px 0 50px;
+        width: 13%;
+        font-size: 12px;
+        text-align: center;
+        font-weight:bold;
+    }
+    .tname2 {
+        height: 140px;
+        float: left;
+        margin: 10px 40px 0 40px;
+        width: 13%;
+        font-size: 12px;
+        text-align: center;
+        font-weight:bold;
+    }
+
+    .tname3 {
+        height: 140px;
+        float: left;
+        margin: 10px 50px 0 40px;
+        width: 13%;
+        font-size: 12px;
+        text-align: center;
+        font-weight:bold;
+    }
+</style>
+<body>
+<header>
+    <nav>
+        <ul>
+            <img id="headphoto"
+                 src="img/logo.gif"
+                 alt="软件工程logo"/>
+            <input id="login" type="button" value="登录" onclick="location.href='admin.html'">
+            <div class="headnav">
+                <div class="headerHide">
+                    <li><a href="main">主页</a></li>
+                </div>
+                <div class="headerHide">
+                    <li><a href="zhuanyejieshao.html">专业介绍</a></li>
+                    <ul>
+                        <li><a href="zhuanyejianjie.html">专业简介</a></li>
+                        <li><a href="fangxiangjianjie.html">方向简介</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="shiyanshi.html">实验室</a></li>
+                    <ul style="width: 175px;">
+                        <li><a style="width: 175px" href="shiyanshi1.html">923创新实验室</a></li>
+                        <li><a style="width: 175px" href="shiyanshi2.html">925移动开发实验室</a></li>
+                        <li><a style="width: 175px" href="shiyanshi3.html">927实验室</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="jiaoshiduiwu.html">教师队伍</a></li>
+                    <ul>
+                        <li><a href="jiaoshou.html">教授</a></li>
+                        <li><a href="fujiaoshou.html">副教授</a></li>
+                        <li><a href="jiangshi.html">讲师</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="jiuyezhinan.html">就业指南</a></li>
+                    <ul>
+                        <li><a href="jiuyeqianjing.html">就业前景</a></li>
+                        <li><a href="qianjingfenxi.html">前景分析</a></li>
+                    </ul>
+                </div>
+            </div>
+        </ul>
+    </nav>
+</header>
+<div class=secondphoto>  <!--最底层-->
+    <div class=second3> <!--白色底层-->
+        <div class="tit1"><!--标题-->
+            <h2>教授</h2>
+        </div>
+        <br>
+        <div>
+            <div style="text-indent: 2em;font-size: 16px;">
+                <pr>
+                    教授的工作是在大学里，如科学和文学等领域。另外教授也必须深耕自己专精的学科，以发表论文的方式来获得商业上的合作机会（包括了政府在科学上的顾问、或是商业发明等），同时训练自己的学生将来有足够的能力与他们交棒。在授课、训练、提交论文与寻求商业合作这四个方向里，要取得平衡则端看学校、地点（国家）和时间额外因素。例如在欧美的顶尖大学中，学校相当重视在独一领域中专精的教授，而且常常将他们做为该校的宣传重点。
+                </pr>
+            </div>
+            <br>
+            <div style="text-indent: 2em;font-size: 16px;">
+                <pr>
+                    在大学或社区学院中执教的资深教师与研究员。教授为大学教师职称的最高级别。英文是Professor，中文的教授两字则源于“传教授业”的字义，是中国古代就已使用的学官名称，在中国汉代、唐代的大学中都设有此职。与英文没有关联。日语中则与中文同用“教授”一字来称呼大学中的的老师。
+                </pr>
+            </div>
+
+            <br><br><br>
+
+            <div class="teacher">
+                <div>  <!-- 图片-->
+                    <a href="teacher_sujianmin.html" class="teacher1" style="background-image: url('img/teacher/sujianmin.jpg')"></a>
+                    <a href="teacher_sujianmin.html" class="teacher2" style="background-image: url('img/teacher/sujianmin.jpg')"></a>
+                    <a href="teacher_sujianmin.html" class="teacher2" style="background-image: url('img/teacher/sujianmin.jpg')"></a>
+                    <a href="teacher_sujianmin.html" class="teacher3" style="background-image: url('img/teacher/sujianmin.jpg')"></a>
+                </div>
+                <div><!--名字-->
+                    <a href="teacher_sujianmin.html" class="tname1">苏健民老师</a>
+                    <a href="teacher_sujianmin.html" class="tname2">苏健民老师</a>
+                    <a href="teacher_sujianmin.html" class="tname2">苏健民老师</a>
+                    <a href="teacher_sujianmin.html" class="tname3">苏健民老师</a>
+                </div>
+            </div>
+            <br>
+    </div>
+</div>
+</div>
+<div id="footer" style="background-color:beige;clear:both;text-align:center;">
+    版权 © yang
+</div>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>927实验室</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    header li {
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        display: block;
+    }
+
+    /* ----------- 上导航 ---------------- */
+    header {
+        background-image: url("img/school2.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 370px;
+    }
+
+    header div {
+        display: inline-block;
+    }
+
+    #headphoto {
+        float: left;
+        height: 50px;
+        padding: 0 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #login {
+        float: right;
+        height: 30px;
+        width: 60px;
+        padding: 0px;
+        text-align: center;
+        font-size: medium;
+        margin: 12px 30px;
+        background: none;
+    }
+
+    .headnav {
+        float: right;
+        display: flex;
+        align-items: center;
+    }
+
+    nav a {
+        color: white;
+        display: block;
+        padding: 15px 15px;
+        width: 100px;
+    }
+
+    nav a:hover {
+        background-color: #006030;
+        transform: scale(1.1);
+    }
+
+    .headerHide {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .headerHide ul {
+        display: none;
+        width: 64px;
+    }
+
+    .headerHide:hover ul { /*点击显示下拉*/
+        display: block;
+        padding: 5px;
+        width: 110px;
+        position: absolute;
+        background-color: #24998d;
+    }
+
+    nav > ul > ul {
+        padding: 10px 20px;
+        width: 160px;
+    }
+
+    nav > ul > ul li {
+        vertical-align: middle;
+    }
+    /*-------------------第二部分-------------------*/
+    .secondphoto {
+        background-image: url("img/test4.JPG");
+        height: 780px;
+        width: 100%;
+        background-size: 100% 100%;
+        padding: 20px;
+        background-repeat: no-repeat;
+        /*filter: blur(5px);*/
+    }
+
+    .second3 {
+        margin: 0 100px;
+        background-size: 100%;
+        padding: 10px 90px;
+        height: 100%;
+    }
+    .tit1 {
+        height: 45px;
+        line-height: 43px;
+    }
+
+    .tit1 h2 {
+        font-size: 24px;
+        font-weight: 700;
+        float: left;
+        padding-right: 15px;
+        text-align: center;
+    }
+
+    .tit1 h2 span {
+        font-size: 12px;
+    }
+    /*-----------------------图片部分----------------*/
+    .shiyanshi{
+        padding: 10px;
+        display: inline-block;
+        height: 200px;
+        width: 100%;
+    }
+    .shiyanshi1{
+        background-size: 100% 100%;
+        height: 200px;
+        float: left;
+        margin-right: 30px;
+        width: 30%;
+    }
+    /*-------------联系方式----------*/
+    .lianxi{
+        font-size: 10px;
+        color: blue;
+    }
+</style>
+<body>
+<header>
+    <nav>
+        <ul>
+            <img id="headphoto"
+                 src="img/logo.gif"
+                 alt="软件工程logo"/>
+            <input id="login" type="button" value="登录" onclick="location.href='admin.html'">
+            <div class="headnav">
+                <div class="headerHide">
+                    <li><a href="main">主页</a></li>
+                </div>
+                <div class="headerHide">
+                    <li><a href="zhuanyejieshao.html">专业介绍</a></li>
+                    <ul>
+                        <li><a href="zhuanyejianjie.html">专业简介</a></li>
+                        <li><a href="fangxiangjianjie.html">方向简介</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="shiyanshi.html">实验室</a></li>
+                    <ul style="width: 175px;">
+                        <li ><a style="width: 175px" href="shiyanshi1.html">923创新实验室</a></li>
+                        <li><a style="width: 175px" href="shiyanshi2.html">925移动开发实验室</a></li>
+                        <li><a style="width: 175px" href="shiyanshi3.html">927实验室</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="jiaoshiduiwu.html">教师队伍</a></li>
+                    <ul>
+                        <li><a href="jiaoshou.html">教授</a></li>
+                        <li><a href="fujiaoshou.html">副教授</a></li>
+                        <li><a href="jiangshi.html">讲师</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="jiuyezhinan.html">就业指南</a></li>
+                    <ul>
+                        <li><a href="jiuyeqianjing.html">就业前景</a></li>
+                        <li><a href="qianjingfenxi.html">前景分析</a></li>
+                    </ul>
+                </div>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+
+<div class=secondphoto>  <!--最底层-->
+    <div class=second3> <!--白色底层-->
+        <div class="tit1"><!--标题-->
+            <h2>927实验室</h2>
+        </div>
+        <br>
+        <div>
+            <div style="text-indent: 2em;font-size: 16px;">
+                <pr>
+                    软件实验室主要是面向本科生、专科生、函授生，完全承担计算机专业的软件实验和网络实验，并承担学校计算机公共课实验、计算机辅修班实验。每个实验室有100个机位，两个室共有200个机位，每天可根据需要安排4—6批实验。从今年起，我系在软件实验室进行无纸化考试的试点工作，以后将逐步大面积推广。
+                </pr>
+            </div>
+            <br>
+            <div style="text-indent: 2em;font-size: 16px;">
+                <pr>
+                    新建的软件实验室在系南五、六楼，室内通风、照明、通道、整洁度等指标都达到标准，自行设计的实验桌，既方便了实验室的管理，也方便了对机器的维护。软件实验以培养学生的应用软件开发工具和程序编写能力，大型软件的分析和开发，运用综合知识完成大型应用软件的设计。实验室内的机器配置一致，教师授课及实验辅导效果，都有了很大改善。实验室的整体配置较高，实验室能够开出各种专业性强、多种操作系统的实验课程，如JAVA、VC、BC、面向对象程序设计、SQL数据库、Linux操作系统平台上的实验等。此外实验室内还配备了两套大型投影屏幕以及无线扩音设备等，可以开展多媒体的教学工作。
+                </pr>
+            </div>
+            <br>
+            <div style="text-indent: 2em;font-size: 16px;">
+                <pr>
+                    该中心为实验教学和科研提供了一个良好的工作场所、且在实验体系、管理模式、技术先进性和资产利用率方面达到国内高校中先进水平，同时成为广东省具有示范性意义的高校教学实验室。
+                </pr>
+            </div>
+
+            <br><br><br>
+            <div class="shiyanshi">
+                <div class="shiyanshi1" style="background-image: url('img/shiyanshi2.jpg');">
+                </div>
+                <div class="shiyanshi1" style="background-image: url('img/test3.png');">
+                </div>
+                <div class="shiyanshi1" style="background-image: url('img/shiyanshi5.jpg');">
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="lianxi">
+                有意者联系 王老师<br>
+                联系方式：13030075792<br>
+                邮箱：820040980@qq.com<br>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="footer" style="background-color:beige;clear:both;text-align:center;">
+    版权 © yang
+</div>
+</body>
+</html>

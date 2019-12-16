@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实验室</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    header li {
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        display: block;
+    }
+
+    /* ----------- 上导航 ---------------- */
+    header {
+        background-image: url("img/school2.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 370px;
+    }
+
+    header div {
+        display: inline-block;
+    }
+
+    #headphoto {
+        float: left;
+        height: 50px;
+        padding: 0 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #login {
+        float: right;
+        height: 30px;
+        width: 60px;
+        padding: 0px;
+        text-align: center;
+        font-size: medium;
+        margin: 12px 30px;
+        background: none;
+    }
+
+    .headnav {
+        float: right;
+        display: flex;
+        align-items: center;
+    }
+
+    nav a {
+        color: white;
+        display: block;
+        padding: 15px 15px;
+        width: 100px;
+    }
+
+    nav a:hover {
+        background-color: #006030;
+        transform: scale(1.1);
+    }
+
+    .headerHide {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .headerHide ul {
+        display: none;
+        width: 64px;
+    }
+
+    .headerHide:hover ul { /*点击显示下拉*/
+        display: block;
+        padding: 5px;
+        width: 110px;
+        position: absolute;
+        background-color: #24998d;
+    }
+
+    nav > ul > ul {
+        padding: 10px 20px;
+        width: 160px;
+    }
+
+    nav > ul > ul li {
+        vertical-align: middle;
+    }
+    /*-------------------第二部分-------------------*/
+    .secondphoto {
+        background-image: url("img/test4.JPG");
+        height: 980px;
+        width: 100%;
+        background-size: 100% 100%;
+        padding: 20px;
+        background-repeat: no-repeat;
+        /*filter: blur(5px);*/
+    }
+
+    .second3 {
+        background-color: rgba(255, 255, 255, 0.85);
+        margin: 0 140px;
+        background-size: 100%;
+        padding: 10px 93px;
+        height: 100%;
+    }
+    .tit1 {
+        height: 45px;
+        line-height: 43px;
+    }
+
+    .tit1 h2 {
+        font-size: 24px;
+        font-weight: 700;
+        float: left;
+        padding-right: 15px;
+        text-align: center;
+    }
+
+    .tit1 h2 span {
+        font-size: 12px;
+    }
+
+
+    .lianjiekuai {
+        width: 176px;
+        display: inline-block;
+        float: left;
+        position: relative;
+        height: 170px;
+        margin: 12px 40px 20px 0;
+        background-size: 100%;
+    }
+
+    .lianjietu {
+        width: 0;
+        height: 100%;
+        background-color: rgba(255,251,240, 0.7);
+        text-align: center;
+        font-size: 26px;
+        /*以下是滑动效果*/
+        transition: width 0.4s ease-out, opacity 0.2s ease-in, visibility 0.2s ease-in;
+        width: 0;
+        opacity: 0;
+        /*line-height: 160px;*/
+        font-weight:600;
+        display: inline-block; /*一定要将div设置为inline-block*/
+        vertical-align: middle;/*设置该元素在父元素中的位置*/
+    }
+
+    .lianjiekuai:hover .lianjietu {
+        opacity: 1;
+        width: 100%;}
+/*-----------------------图片部分----------------*/
+     .shiyanshi{
+         padding: 10px;
+         display: inline-block;
+         height: 200px;
+         width: 100%;
+     }
+    .shiyanshi1{
+        background-size: 100% 100%;
+        height: 200px;
+        float: left;
+        margin-right: 30px;
+        width: 30%;
+    }
+
+</style>
+<body>
+<header>
+    <nav>
+        <ul>
+            <img id="headphoto"
+                 src="img/logo.gif"
+                 alt="软件工程logo"/>
+            <input id="login" type="button" value="登录" onclick="location.href='admin.html'">
+            <div class="headnav">
+                <div class="headerHide">
+                    <li><a href="main">主页</a></li>
+                </div>
+                <div class="headerHide">
+                    <li><a href="zhuanyejieshao.html">专业介绍</a></li>
+                    <ul>
+                        <li><a href="zhuanyejianjie.html">专业简介</a></li>
+                        <li><a href="fangxiangjianjie.html">方向简介</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="shiyanshi.html">实验室</a></li>
+                    <ul style="width: 175px;">
+                        <li ><a style="width: 175px" href="shiyanshi1.html">923创新实验室</a></li>
+                        <li><a style="width: 175px" href="shiyanshi2.html">925移动开发实验室</a></li>
+                        <li><a style="width: 175px" href="shiyanshi3.html">927实验室</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="jiaoshiduiwu.html">教师队伍</a></li>
+                    <ul>
+                        <li><a href="jiaoshou.html">教授</a></li>
+                        <li><a href="fujiaoshou.html">副教授</a></li>
+                        <li><a href="jiangshi.html">讲师</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="jiuyezhinan.html">就业指南</a></li>
+                    <ul>
+                        <li><a href="jiuyeqianjing.html">就业前景</a></li>
+                        <li><a href="qianjingfenxi.html">前景分析</a></li>
+                    </ul>
+                </div>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+
+<div class=secondphoto>  <!--最底层-->
+    <div class=second3> <!--白色底层-->
+        <div class="tit1"><!--标题-->
+            <h2>实验室</h2>
+        </div>
+        <br>
+        <div>
+            <div style="text-indent: 2em;font-size: 16px;">
+                <pr>
+                    软件工程实验室是东北林业大学计算机学院为配合软件工程专业教学、科研和实践的需要，于2001年底开始规划筹建，2002年3月建成，并在之后为本学院软件工程专业的教学及学习提供了一个良好的实践环境。
+                </pr>
+            </div>
+            <br>
+            <div style="text-indent: 2em;font-size: 16px;">
+                <pr>
+                    实验室面积227平方米，配备DELL PowerEdge 6600服务器和DELL PowerEdge 4400服务器(双CPU)各1台，清华同方工作站101台，通过实验室的5台Netgear高速交换机联网，与学院网络中心以100M光纤相连，并经校园网接入互联网。工作站及服务器均配备有适应于专业教学、实践任务的软件系统。完善的软硬件平台和网络环境为在本实验室进行相关专业课程的教学与实验提供了可靠的技术支持。实验室为相关课程的实验教学开设了相当数量的基础验证型实验和设计开发型实验，有效地促进了软件工程专业的教学和学生能力培养。
+                </pr>
+            </div>
+            <br>
+            <div style="text-indent: 2em;font-size: 16px;">
+                <pr>
+                    本实验室主要研究软件工程专业的实验教学方法和软件工程相关技术。软件工程技术不仅是计算机科学与技术中的重要研究领域之一，也是对提高社会信息化、数字化水平和对国民经济发展具有重大影响的重要技术。作为软件工程专业教学的辅助，本实验室侧重软件工程中开发与集成技术的应用及教学研究，目标是培养软件开发和管理人才，促进软件开发与集成技术的发展及应用。
+                </pr>
+            </div>
+            <br>
+            <div style="text-indent: 2em;font-size: 16px;">
+                <pr>
+                    同时，本实验室为开放型实验室，除完成本专业教学实践外，鼓励及支持广大师生利用本实验室进行相关领域的教学及科研活动，提倡多领域、多技术的相互渗透及应用，鼓励来自不同方向研究工作的结合和研究人员协同交流，力求充分利用已有的教学科研实验条件，使实验室成为广大师生进行教学及科研活动的重要基地和进行技术交流的平台。
+                </pr>
+            </div>
+            <br>
+<div class="shiyanshi">
+    <div class="shiyanshi1" style="background-image: url('img/shiyanshi1.jpg');">
+    </div>
+    <div class="shiyanshi1" style="background-image: url('img/shiyanshi2.jpg');">
+    </div>
+    <div class="shiyanshi1" style="background-image: url('img/shiyanshi3.jpg');">
+    </div>
+</div>
+         <br>   <br><br>
+            <HR  width="100%" color=#987cb9 SIZE=3>    <!--分割线-->
+            <br><br>
+        </div>
+        <div class="lianjiekuai" style="background-image: url('img/snow3.JPG')">
+            <div class="lianjietu">
+                <br>  <a href="shiyanshi1.html" style="color: midnightblue">923<br>创新<br>实验室</a>
+            </div>
+        </div>
+        <div class="lianjiekuai" style="background-image: url('img/snow7.JPG')">
+            <div class="lianjietu">
+                <br><a href="fangxiangjianjie.html" style="color: midnightblue">925<br>移动创新<br>实验室</a>
+            </div>
+        </div>
+        <div class="lianjiekuai" style="background-image: url('img/snow5.JPG')">
+            <div class="lianjietu">
+                <br><a href="fangxiangjianjie.html" style="color: midnightblue">927<br>实验室</a>
+            </div>
+        </div>
+        <div class="lianjiekuai"style="background-image: url('img/链接1.JPG')">
+            <div class="lianjietu">
+                <br>  <a href="main" style="color: midnightblue">回到<br>首页</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="footer" style="background-color:beige;clear:both;text-align:center;">
+    版权 © yang
+</div>
+</body>
+</html>

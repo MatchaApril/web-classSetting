@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>教师队伍</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    header li {
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        display: block;
+    }
+
+    /* ----------- 上导航 ---------------- */
+    header {
+        background-image: url("img/school2.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 370px;
+    }
+
+    header div {
+        display: inline-block;
+    }
+
+    #headphoto {
+        float: left;
+        height: 50px;
+        padding: 0 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #login {
+        float: right;
+        height: 30px;
+        width: 60px;
+        padding: 0px;
+        text-align: center;
+        font-size: medium;
+        margin: 12px 30px;
+        background: none;
+    }
+
+    .headnav {
+        float: right;
+        display: flex;
+        align-items: center;
+    }
+
+    nav a {
+        color: white;
+        display: block;
+        padding: 15px 15px;
+        width: 100px;
+    }
+
+    nav a:hover {
+        background-color: #006030;
+        transform: scale(1.1);
+    }
+
+    .headerHide {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .headerHide ul {
+        display: none;
+        width: 64px;
+    }
+
+    .headerHide:hover ul { /*点击显示下拉*/
+        display: block;
+        padding: 5px;
+        width: 110px;
+        position: absolute;
+        background-color: #24998d;
+    }
+
+    nav > ul > ul {
+        padding: 10px 20px;
+        width: 160px;
+    }
+
+    nav > ul > ul li {
+        vertical-align: middle;
+    }
+
+    /*-------------------第二部分-------------------*/
+    .secondphoto {
+        background-image: url("img/test4.JPG");
+        height: 1360px;
+        width: 100%;
+        background-size: 100% 100%;
+        padding: 20px;
+        background-repeat: no-repeat;
+        /*filter: blur(5px);*/
+    }
+
+    .second3 {
+        background-color: rgba(255, 255, 255, 0.85);
+        margin: 0 140px;
+        background-size: 100%;
+        padding: 10px 93px;
+        height: 100%;
+    }
+
+    .tit1 {
+        height: 45px;
+        line-height: 43px;
+    }
+
+    .tit1 h2 {
+        font-size: 24px;
+        font-weight: 700;
+        float: left;
+        padding-right: 15px;
+        text-align: center;
+    }
+
+    .tit1 h2 span {
+        font-size: 12px;
+    }
+
+
+    .lianjiekuai {
+        width: 176px;
+        display: inline-block;
+        float: left;
+        position: relative;
+        height: 170px;
+        margin: 12px 40px 20px 0;
+        background-size: 100%;
+    }
+
+    .lianjietu {
+        width: 0;
+        height: 100%;
+        background-color: rgba(255, 251, 240, 0.7);
+        text-align: center;
+        font-size: 26px;
+        /*以下是滑动效果*/
+        transition: width 0.4s ease-out, opacity 0.2s ease-in, visibility 0.2s ease-in;
+        width: 0;
+        opacity: 0;
+        /*line-height: 160px;*/
+        font-weight: 600;
+        display: inline-block; /*一定要将div设置为inline-block*/
+        vertical-align: middle; /*设置该元素在父元素中的位置*/
+    }
+
+    .lianjiekuai:hover .lianjietu {
+        opacity: 1;
+        width: 100%;
+    }
+
+    /*-----------------------图片部分----------------*/
+    .teacher {
+        padding: 10px;
+        display: inline-block;
+        height: 200px;
+        width: 100%;
+    }
+
+    .teacher1 {
+        background-size: 100% 100%;
+        height: 140px;
+        float: left;
+        margin: 0 40px 0 50px;
+        width: 13%;
+    }
+
+    .teacher2 {
+        background-size: 100% 100%;
+        height: 140px;
+        float: left;
+        margin: 0 40px;
+        width: 13%;
+    }
+
+    .teacher3 {
+        background-size: 100% 100%;
+        height: 140px;
+        float: left;
+        margin: 0 50px 0 40px;
+        width: 13%;
+    }
+    .tname1{
+        height: 140px;
+        float: left;
+        margin: 10px 40px 0 50px;
+        width: 13%;
+        font-size: 12px;
+        text-align: center;
+        font-weight:bold;
+    }
+    .tname2 {
+        height: 140px;
+        float: left;
+        margin: 10px 40px 0 40px;
+        width: 13%;
+        font-size: 12px;
+        text-align: center;
+        font-weight:bold;
+    }
+
+    .tname3 {
+        height: 140px;
+        float: left;
+        margin: 10px 50px 0 40px;
+        width: 13%;
+        font-size: 12px;
+        text-align: center;
+        font-weight:bold;
+    }
+</style>
+<body>
+<header>
+    <nav>
+        <ul>
+            <img id="headphoto"
+                 src="img/logo.gif"
+                 alt="软件工程logo"/>
+            <input id="login" type="button" value="登录" onclick="location.href='admin.html'">
+            <div class="headnav">
+                <div class="headerHide">
+                    <li><a href="main">主页</a></li>
+                </div>
+                <div class="headerHide">
+                    <li><a href="zhuanyejieshao.html">专业介绍</a></li>
+                    <ul>
+                        <li><a href="zhuanyejianjie.html">专业简介</a></li>
+                        <li><a href="fangxiangjianjie.html">方向简介</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="shiyanshi.html">实验室</a></li>
+                    <ul style="width: 175px;">
+                        <li><a style="width: 175px" href="shiyanshi1.html">923创新实验室</a></li>
+                        <li><a style="width: 175px" href="shiyanshi2.html">925移动开发实验室</a></li>
+                        <li><a style="width: 175px" href="shiyanshi3.html">927实验室</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="jiaoshiduiwu.html">教师队伍</a></li>
+                    <ul>
+                        <li><a href="jiaoshou.html">教授</a></li>
+                        <li><a href="fujiaoshou.html">副教授</a></li>
+                        <li><a href="jiangshi.html">讲师</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="jiuyezhinan.html">就业指南</a></li>
+                    <ul>
+                        <li><a href="jiuyeqianjing.html">就业前景</a></li>
+                        <li><a href="qianjingfenxi.html">前景分析</a></li>
+                    </ul>
+                </div>
+            </div>
+        </ul>
+    </nav>
+</header>
+<div class=secondphoto>  <!--最底层-->
+    <div class=second3> <!--白色底层-->
+        <div class="tit1"><!--标题-->
+            <h2>教师队伍</h2>
+        </div>
+        <br>
+        <div>
+            <div style="text-indent: 2em;font-size: 16px;">
+                <pr>
+                    随着高等教育的快速发展，专业积极把握机遇，开拓创新，规范师资队伍建设和管理工作，加大师资队伍建设和人才培养力度，依托教育部各个层次人才计划，实施“名师英才工程”人才培养计划，大力支持教师培训、进修、国内外访学，大力引进国内外优秀人才，强化教师队伍服务和管理工作，建立健全教师考核机制，加强学术梯队建设，优化教师队伍职称、学历、学缘、年龄结构，提高教师队伍整体水平，师资队伍发展呈现良好态势。
+                </pr>
+            </div>
+            <br>
+            <div style="text-indent: 2em;font-size: 16px;">
+                <pr>
+                    专业目前专任教师1328人，其中教授280人，副教授550人，教授、副教授所占比例达62.5%；具有博士学位的教师724人，占教师总数的54.52%；具有硕士学位的教师512人，占教师总数的38.55%；合计硕士学位以上人员占93.07%；教师中外校毕业生比例占教师总数的70.12%。
+                </pr>
+            </div>
+            <br>
+            <div style="text-indent: 2em;font-size: 16px;">
+                <pr>
+                    在教师队伍中，一批中青年学者学术精湛、锐意创新，成为国内外具有重要影响的著名学者和学术带头人。其中，中国工程院院士2名，双聘院士5名，“长江学者”特聘教授4名，国家杰出青年基金获得者1名，新世纪优秀人才支持计划入选者32名，享受国务院政府特殊津贴专家33名，国家有突出贡献中青年专家3名，省部级有突出贡献中青年专家16名，全国“百千万人才工程”人选4名，“新世纪百千万工程”人选5名，龙江学者特聘教授10名、讲座教授3名、青年学者1名，全国优秀博士学位论文获得者3名。
+                </pr>
+            </div>
+            <br><br><br>
+            <div class="teacher">
+               <div>  <!-- 图片-->
+                <a href="teacher_wangbo.html" class="teacher1" style="background-image: url('img/teacher/wangbo.jpg')"></a>
+                <a href="teacher_lili.html" class="teacher2" style="background-image: url('img/teacher/lili.jpg')"></a>
+                <a href="teacher_liyan.html" class="teacher2" style="background-image: url('img/teacher/liyan.jpg')"></a>
+                <a href="teacher_zhaoyuming.html" class="teacher3" style="background-image: url('img/teacher/zhaoyuming.jpg')"></a>
+               </div>
+                <div><!--名字-->
+                    <a href="teacher_wangbo.html" class="tname1">王波老师</a>
+                    <a href="teacher_wangbo.html" class="tname2">李莉老师</a>
+                    <a href="teacher_wangbo.html" class="tname2">李琰老师</a>
+                    <a href="teacher_wangbo.html" class="tname3">赵玉茗老师</a>
+                </div>
+            </div>
+            <div class="teacher">
+                <div>  <!-- 图片-->
+                    <a href="teacher_bianjilong.html" class="teacher1" style="background-image: url('img/teacher/bianjilong.jpg')"></a>
+                    <a href="teacher_guzhixin.html" class="teacher2" style="background-image: url('img/teacher/guzhixin.png')"></a>
+                    <a href="teacher_liudan.html" class="teacher2" style="background-image: url('img/teacher/liudan.jpg')"></a>
+                    <a href="teacher_luosiqing.html" class="teacher3" style="background-image: url('img/teacher/luosiqing.png')"></a>
+                </div>
+                <div><!--名字-->
+                    <a href="teacher_bianjilong.html" class="tname1">边继龙老师</a>
+                    <a href="teacher_guzhixin.html" class="tname2">谷志新老师</a>
+                    <a href="teacher_liudan.html" class="tname2">刘丹老师</a>
+                    <a href="teacher_luosiqing.html" class="tname3">罗嗣卿老师</a>
+                </div>
+            </div>
+            <div class="teacher">
+                <div>  <!-- 图片-->
+                    <a href="teacher_qiuzhaowen.html" class="teacher1" style="background-image: url('img/teacher/qiuzhaowen.jpg')"></a>
+                    <a href="teacher_shanying.html" class="teacher2" style="background-image: url('img/teacher/shanying.png')"></a>
+                    <a href="teacher_sujianmin.html" class="teacher2" style="background-image: url('img/teacher/sujianmin.jpg')"></a>
+                    <a href="teacher_zhangxiying.html"class="teacher3" style="background-image: url('img/teacher/zhangxiying.jpg')"></a>
+                </div>
+                <div><!--名字-->
+                    <a href="teacher_qiuzhaowen.html" class="tname1">邱兆文老师</a>
+                    <a href="teacher_shanying.html" class="tname2">单颖老师</a>
+                    <a href="teacher_sujianmin.html" class="tname2">苏健民老师</a>
+                    <a href="teacher_zhangxiying.html" class="tname3">张锡英老师</a>
+                </div>
+            </div>
+            <br> <br><br>
+            <HR width="100%" color=#987cb9 SIZE=3>    <!--分割线-->
+            <br><br>
+        </div>
+        <div class="lianjiekuai" style="background-image: url('img/snow3.JPG')">
+            <div class="lianjietu">
+                <br> <a href="jiaoshou.html" style="color: midnightblue"><br>教授</a>
+            </div>
+        </div>
+        <div class="lianjiekuai" style="background-image: url('img/snow7.JPG')">
+            <div class="lianjietu">
+                <br><a href="fujiaoshou.html" style="color: midnightblue"><br>副教授</a>
+            </div>
+        </div>
+        <div class="lianjiekuai" style="background-image: url('img/snow5.JPG')">
+            <div class="lianjietu">
+                <br><a href="jiangshi.html" style="color: midnightblue"><br>讲师</a>
+            </div>
+        </div>
+        <div class="lianjiekuai" style="background-image: url('img/链接1.JPG')">
+            <div class="lianjietu">
+                <br> <a href="main" style="color: midnightblue">回到<br>首页</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer" style="background-color:beige;clear:both;text-align:center;">
+    版权 © yang
+</div>
+</body>
+</html>

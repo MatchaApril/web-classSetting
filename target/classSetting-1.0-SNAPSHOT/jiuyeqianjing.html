@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>就业前景</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    header li {
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        display: block;
+    }
+
+    /* ----------- 上导航 ---------------- */
+    header {
+        background-image: url("img/school2.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 370px;
+    }
+
+    header div {
+        display: inline-block;
+    }
+
+    #headphoto {
+        float: left;
+        height: 50px;
+        padding: 0 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #login {
+        float: right;
+        height: 30px;
+        width: 60px;
+        padding: 0px;
+        text-align: center;
+        font-size: medium;
+        margin: 12px 30px;
+        background: none;
+    }
+
+    .headnav {
+        float: right;
+        display: flex;
+        align-items: center;
+    }
+
+    nav a {
+        color: white;
+        display: block;
+        padding: 15px 15px;
+        width: 100px;
+    }
+
+    nav a:hover {
+        background-color: #006030;
+        transform: scale(1.1);
+    }
+
+    .headerHide {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .headerHide ul {
+        display: none;
+        width: 64px;
+    }
+
+    .headerHide:hover ul { /*点击显示下拉*/
+        display: block;
+        padding: 5px;
+        width: 110px;
+        position: absolute;
+        background-color: #24998d;
+    }
+
+    nav > ul > ul {
+        padding: 10px 20px;
+        width: 160px;
+    }
+
+    nav > ul > ul li {
+        vertical-align: middle;
+    }
+    /*-------------------第二部分-------------------*/
+    .zhaunyesec {
+        background-image: url("img/test5.jpg");
+        height: 1000px;
+        width: 100%;
+        background-size: 100% 100%;
+        padding: 20px;
+        background-repeat: no-repeat;
+        /*filter: blur(5px);*/
+    }
+</style>
+<body>
+<header>
+    <nav>
+        <ul>
+            <img id="headphoto"
+                 src="img/logo.gif"
+                 alt="软件工程logo"/>
+            <input id="login" type="button" value="登录" onclick="location.href='admin.html'">
+            <div class="headnav">
+                <div class="headerHide">
+                    <li><a href="main">主页</a></li>
+                </div>
+                <div class="headerHide">
+                    <li><a href="zhuanyejieshao.html">专业介绍</a></li>
+                    <ul>
+                        <li><a href="zhuanyejianjie.html">专业简介</a></li>
+                        <li><a href="fangxiangjianjie.html">方向简介</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="shiyanshi.html">实验室</a></li>
+                    <ul style="width: 175px;">
+                        <li ><a style="width: 175px" href="shiyanshi1.html">923创新实验室</a></li>
+                        <li><a style="width: 175px" href="shiyanshi2.html">925移动开发实验室</a></li>
+                        <li><a style="width: 175px" href="shiyanshi3.html">923实验室</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="jiaoshiduiwu.html">教师队伍</a></li>
+                    <ul>
+                        <li><a href="jiaoshou.html">教授</a></li>
+                        <li><a href="fujiaoshou.html">副教授</a></li>
+                        <li><a href="jiangshi.html">讲师</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="jiuyezhinan.html">就业指南</a></li>
+                    <ul>
+                        <li><a href="jiuyeqianjing.html">就业前景</a></li>
+                        <li><a href="qianjingfenxi.html">前景分析</a></li>
+                    </ul>
+                </div>
+            </div>
+        </ul>
+    </nav>
+</header>
+<div class="zhaunyesec">
+    <h2 style="margin: 30px 200px 0 200px">就业前景</h2>
+    <div style="margin: 17px 200px 20px 200px;text-indent: 2em;font-size: 16px;">
+        <pr>
+              软件工程是计算机领域发展最快的学科分支之一，是一门研究用工程化方法构建和维护有效的、
+            实用的和高质量的软件的学科。它涉及程序设计语言、数据库、软件开发工具、系统平台、标准、设计模式等方面。
+        </pr>
+    </div>
+    <h4 style="margin: 30px 200px 0 200px">职业要求：</h4>
+    <div style="margin: 20px 200px;text-indent: 2em;font-size: 16px;">
+        <pr>
+            1、精通一种主流语言及对应的开发工具；精通数据结构。 
+        </pr>
+    </div>
+    <div style="margin: 20px 200px;text-indent: 2em;font-size: 16px;">
+        <pr>
+            2、具有较好的业务理解能力和技术调查能力。
+        </pr>
+    </div>
+    <div style="margin: 20px 200px;text-indent: 2em;font-size: 16px;">
+        <pr>
+            3、编写高质量代码并具有代码审查能力。
+        </pr>
+    </div>
+    <div style="margin: 20px 200px;text-indent: 2em;font-size: 16px;">
+        <pr>
+            4、具有详细设计能力。
+        </pr>
+    </div>
+    <div style="margin: 20px 200px;text-indent: 2em;font-size: 16px;">
+        <pr>
+            5、熟悉系统测试工具，对系统问题具有改善能力。
+        </pr>
+    </div>
+    <h4 style="margin: 30px 200px 0 200px">行业分析：</h4>
+    <div style="margin: 20px 200px;text-indent: 2em;font-size: 16px;">
+        <pr>
+            据《中国经济与信息化》数据统计，我国软件出口规模达到215亿元，软件从业人员达到72万人，在中国IT业内众多职位中，软件工程师位列第一，软件工程人才的就业前景相对乐观。普通本科应届毕业生主要在各软件公司，企业单位，高等院校等从事软件设计、开发、应用于研究工作。
+        </pr>
+    </div>
+    <div style="margin: 20px 200px;text-indent: 2em;font-size: 16px;">
+        <pr>
+            据有关数据显示，我国目前对软件人才的需求已达20万，并且以每年20%左右的速度增长，而高校计算机毕业生中的软件工程人才还很缺乏，尤其是高素质的软件工程人才的极度短缺。
+        </pr>
+    </div>
+
+    <h4 style="margin: 30px 200px 0 200px">国内软件工程师就业现状：</h4>
+    <div style="margin: 20px 200px;text-indent: 2em;font-size: 16px;">
+        <pr>
+            随着信息技术与互联网行业的蓬勃发展,特别是“互联网+”概念的提出,使得互联网+产业迅速发展,相关人才也一直保持着全年行业需求的最高。作为现今拥有最大规模和最广阔前景的朝阳产业——软件产业,其人才待遇也是相当不错的。
+        </pr>
+    </div>
+    <div style="margin: 20px 200px;text-indent: 2em;font-size: 16px;">
+        <pr>
+            虽然软件工程师这一职业相对于其他领域的职位其薪资是比较高的,但该行业中一直都 有着这么一条共识:一般只是做编码的工作的话,干到三十岁就得往管理岗位上爬了。“30岁问题”一直都是IT职场中的一个痛点。 </pr>
+    </div>
+
+
+</div>
+
+<div id="footer" style="background-color:beige;clear:both;text-align:center;">
+    版权 © yang
+</div>
+</body>
+</html>

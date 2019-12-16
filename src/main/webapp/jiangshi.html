@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>讲师</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    header li {
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        display: block;
+    }
+
+    /* ----------- 上导航 ---------------- */
+    header {
+        background-image: url("img/school2.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 370px;
+    }
+
+    header div {
+        display: inline-block;
+    }
+
+    #headphoto {
+        float: left;
+        height: 50px;
+        padding: 0 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #login {
+        float: right;
+        height: 30px;
+        width: 60px;
+        padding: 0px;
+        text-align: center;
+        font-size: medium;
+        margin: 12px 30px;
+        background: none;
+    }
+
+    .headnav {
+        float: right;
+        display: flex;
+        align-items: center;
+    }
+
+    nav a {
+        color: white;
+        display: block;
+        padding: 15px 15px;
+        width: 100px;
+    }
+
+    nav a:hover {
+        background-color: #006030;
+        transform: scale(1.1);
+    }
+
+    .headerHide {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .headerHide ul {
+        display: none;
+        width: 64px;
+    }
+
+    .headerHide:hover ul { /*点击显示下拉*/
+        display: block;
+        padding: 5px;
+        width: 110px;
+        position: absolute;
+        background-color: #24998d;
+    }
+
+    nav > ul > ul {
+        padding: 10px 20px;
+        width: 160px;
+    }
+
+    nav > ul > ul li {
+        vertical-align: middle;
+    }
+
+    /*-------------------第二部分-------------------*/
+    .secondphoto {
+        background-image: url("img/test4.JPG");
+        height: 580px;
+        width: 100%;
+        background-size: 100% 100%;
+        padding: 20px;
+        background-repeat: no-repeat;
+        /*filter: blur(5px);*/
+    }
+
+    .second3 {
+        margin: 0 140px;
+        background-size: 100%;
+        padding: 10px 93px;
+        height: 100%;
+    }
+
+    .tit1 {
+        height: 45px;
+        line-height: 43px;
+    }
+
+    .tit1 h2 {
+        font-size: 24px;
+        font-weight: 700;
+        float: left;
+        padding-right: 15px;
+        text-align: center;
+    }
+
+    .tit1 h2 span {
+        font-size: 12px;
+    }
+
+    /*-----------------------图片部分----------------*/
+    .teacher {
+        padding: 10px;
+        display: inline-block;
+        height: 200px;
+        width: 100%;
+    }
+
+    .teacher1 {
+        background-size: 100% 100%;
+        height: 140px;
+        float: left;
+        margin: 0 40px 0 50px;
+        width: 13%;
+    }
+
+    .teacher2 {
+        background-size: 100% 100%;
+        height: 140px;
+        float: left;
+        margin: 0 40px;
+        width: 13%;
+    }
+
+    .teacher3 {
+        background-size: 100% 100%;
+        height: 140px;
+        float: left;
+        margin: 0 50px 0 40px;
+        width: 13%;
+    }
+    .tname1{
+        height: 140px;
+        float: left;
+        margin: 10px 40px 0 50px;
+        width: 13%;
+        font-size: 12px;
+        text-align: center;
+        font-weight:bold;
+    }
+    .tname2 {
+        height: 140px;
+        float: left;
+        margin: 10px 40px 0 40px;
+        width: 13%;
+        font-size: 12px;
+        text-align: center;
+        font-weight:bold;
+    }
+
+    .tname3 {
+        height: 140px;
+        float: left;
+        margin: 10px 50px 0 40px;
+        width: 13%;
+        font-size: 12px;
+        text-align: center;
+        font-weight:bold;
+    }
+</style>
+<body>
+<header>
+    <nav>
+        <ul>
+            <img id="headphoto"
+                 src="img/logo.gif"
+                 alt="软件工程logo"/>
+            <input id="login" type="button" value="登录" onclick="location.href='admin.html'">
+            <div class="headnav">
+                <div class="headerHide">
+                    <li><a href="main">主页</a></li>
+                </div>
+                <div class="headerHide">
+                    <li><a href="zhuanyejieshao.html">专业介绍</a></li>
+                    <ul>
+                        <li><a href="zhuanyejianjie.html">专业简介</a></li>
+                        <li><a href="fangxiangjianjie.html">方向简介</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="shiyanshi.html">实验室</a></li>
+                    <ul style="width: 175px;">
+                        <li><a style="width: 175px" href="shiyanshi1.html">923创新实验室</a></li>
+                        <li><a style="width: 175px" href="shiyanshi2.html">925移动开发实验室</a></li>
+                        <li><a style="width: 175px" href="shiyanshi3.html">927实验室</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="jiaoshiduiwu.html">教师队伍</a></li>
+                    <ul>
+                        <li><a href="jiaoshou.html">教授</a></li>
+                        <li><a href="fujiaoshou.html">副教授</a></li>
+                        <li><a href="jiangshi.html">讲师</a></li>
+                    </ul>
+                </div>
+                <div class="headerHide">
+                    <li><a href="jiuyezhinan.html">就业指南</a></li>
+                    <ul>
+                        <li><a href="jiuyeqianjing.html">就业前景</a></li>
+                        <li><a href="qianjingfenxi.html">前景分析</a></li>
+                    </ul>
+                </div>
+            </div>
+        </ul>
+    </nav>
+</header>
+<div class=secondphoto>  <!--最底层-->
+    <div class=second3> <!--白色底层-->
+        <div class="tit1"><!--标题-->
+            <h2>讲师</h2>
+        </div>
+        <br>
+        <div>
+            <div style="text-indent: 2em;font-size: 16px;">
+                <pr>
+                    专业技术人员所取得的学历必须同申报晋升职务的专业相同或相近，否则一般应视为不具备规定学历。对先参加工作后取得规定学历的人员（以取得学历证书为准），取得学历前后的任职时间可以相加计算，达到任职时间要求的，可以申报高一级专业技术资格。正常申报中级职务，任助理级的总年限最低不得少于4年。
+                </pr>
+            </div>
+            <br>
+            <div style="text-indent: 2em;font-size: 16px;">
+                <pr>
+                    对虽不具备规定学历与资历，但在本职工作岗位上确有真才实学、能力强、业绩贡献突出的专业人员，可破格申报相应的专业技术职务。破格申报对象必须是本单位3年内考核成绩名列前茅者，且一般情况下，不得越级申报和“学历、任职年限双破格”申报。破格申报者，任职年限的提前一般不能超过1年。
+                </pr>
+            </div>
+            <br><br><br>
+            <div class="teacher">
+                <div>  <!-- 图片-->
+                    <a href="teacher_wangbo.html" class="teacher1" style="background-image: url('img/teacher/wangbo.jpg')"></a>
+                    <a href="teacher_bianjilong.html" class="teacher2" style="background-image: url('img/teacher/bianjilong.jpg')"></a>
+                    <a href="teacher_liyan.html" class="teacher2" style="background-image: url('img/teacher/liyan.jpg')"></a>
+                    <a href="teacher_shanying.html" class="teacher3" style="background-image: url('img/teacher/shanying.png')"></a>
+                </div>
+                <div><!--名字-->
+                    <a href="teacher_wangbo.html" class="tname1">王波老师</a>
+                    <a href="teacher_bianjilong.html" class="tname2">边继龙老师</a>
+                    <a href="teacher_wangbo.html" class="tname2">李琰老师</a>
+                    <a href="teacher_shanying.html" class="tname3">单颖老师</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="footer" style="background-color:beige;clear:both;text-align:center;">
+        版权 © yang
+    </div>
+</body>
+</html>
